@@ -28,7 +28,7 @@ sudo apt install gdebi-core wget
 wget https://github.com/Kyrth/roc-rk3328-jeos/raw/master/roc-rk3328-server_1.333_arm64.deb
 sudo gdebi roc-rk3328-server_1.333_arm64.deb
 
-sudo apt install openssh-server
+# Ensure SSHD running
 sudo systemctl enable ssh.service
 
 # install openvpn
