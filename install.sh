@@ -12,8 +12,9 @@ sudo tasksel remove ubuntu-desktop
 # remove lightdm
 sudo apt-get purge lightdm
 # remove remaining x11 libraries
-sudo apt-get remove --purge libx11-6 libx11-data libxau6 libxdmcp6 libxext6 libxml2 libxmuu1
-
+# these get re-added later, some dependacy to check out
+#sudo apt-get remove --purge libx11-6 libx11-data libxau6 libxdmcp6 libxext6 libxml2 libxmuu1
+sudo apt-get remove --purge chromium-codecs-ffmpeg-extra
 # remove all packages no longer required
 sudo apt-get --purge autoremove
 
