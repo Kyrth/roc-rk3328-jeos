@@ -14,7 +14,8 @@ sudo apt-get purge lightdm
 # remove remaining x11 libraries
 # these get re-added later, some dependacy to check out
 #sudo apt-get remove --purge libx11-6 libx11-data libxau6 libxdmcp6 libxext6 libxml2 libxmuu1
-sudo apt-get remove --purge chromium-codecs-ffmpeg-extra
+sudo apt-get remove --purge chromium-codecs-ffmpeg-extra xubuntu-docs
+
 # remove all packages no longer required
 sudo apt-get --purge autoremove
 
@@ -38,6 +39,9 @@ sudo apt install ca-certificates # just incase
 
 # make sure everything is updated
 sudo apt dist-upgrade
+
+# clean out archives
+sudo apt clean
 
 # reboot and pray!
 sudo reboot
