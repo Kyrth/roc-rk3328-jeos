@@ -26,7 +26,7 @@ sudo apt install gdebi-core wget
 # Get meta package for Rockchip RK3328 Ubuntu
 # More info for building it: https://github.com/palladius/debian-packages/tree/master/palladius-ubuntu-desktop
 wget https://github.com/Kyrth/roc-rk3328-jeos/raw/master/roc-rk3328-server_1.333_arm64.deb
-sudo gdebi install roc-rk3328-server_1.333_arm64.deb
+sudo gdebi roc-rk3328-server_1.333_arm64.deb
 
 sudo apt install openssh-server
 sudo systemctl enable ssh.service
