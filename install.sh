@@ -21,7 +21,7 @@ sudo apt-get --purge autoremove
 sudo apt purge $(dpkg --get-selections | grep deinstall | cut -f 1)
 
 # Install GDebi which can fetch packages missing
-sudo apt install gdebi-core
+sudo apt install gdebi-core wget
 
 # Get meta package for Rockchip RK3328 Ubuntu
 # More info for building it: https://github.com/palladius/debian-packages/tree/master/palladius-ubuntu-desktop
