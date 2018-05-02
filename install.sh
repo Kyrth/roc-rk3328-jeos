@@ -34,3 +34,9 @@ sudo systemctl enable ssh.service
 # install openvpn
 sudo apt install openvpn resolvconf
 sudo apt install ca-certificates # just incase
+
+# make sure everything is updated
+sudo apt dist-upgrade
+
+# reboot and pray!
+sudo reboot
